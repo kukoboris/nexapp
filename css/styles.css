@@ -427,6 +427,8 @@ button,
 [type="reset"],
 [type="submit"] {
     -webkit-appearance : button;
+    -moz-appearance: button;    /* For older Firefox browsers */
+    appearance: button;         /* Standard property */
 }
 
 button::-moz-focus-inner,
@@ -477,8 +479,10 @@ textarea {
 }
 
 [type="search"] {
-    -webkit-appearance : textfield;
-    outline-offset     : -2px;
+    -webkit-appearance: textfield; /* For older WebKit browsers */
+    -moz-appearance: textfield;    /* For older Firefox browsers */
+    appearance: textfield;         /* Standard property */
+    outline-offset: -2px;
 }
 
 [type="search"]::-webkit-search-decoration {
