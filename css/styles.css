@@ -427,6 +427,8 @@ button,
 [type="reset"],
 [type="submit"] {
     -webkit-appearance : button;
+    -moz-appearance: button;    /* For older Firefox browsers */
+    appearance: button;         /* Standard property */
 }
 
 button::-moz-focus-inner,
@@ -477,8 +479,10 @@ textarea {
 }
 
 [type="search"] {
-    -webkit-appearance : textfield;
-    outline-offset     : -2px;
+    -webkit-appearance: textfield; /* For older WebKit browsers */
+    -moz-appearance: textfield;    /* For older Firefox browsers */
+    appearance: textfield;         /* Standard property */
+    outline-offset: -2px;
 }
 
 [type="search"]::-webkit-search-decoration {
@@ -3008,7 +3012,7 @@ img.u-pull-left {
     font-size           : 1.6rem;
     font-weight         : 400;
     line-height         : var(--header-height);
-    color               : rgba(255, 255, 255, 0.6);
+    color               : rgba(255, 255, 255, 1);
     padding             : 0 1.2rem;
     transition-property : color, background-color;
 }
@@ -3292,7 +3296,7 @@ img.u-pull-left {
     bottom              : 0;
     width               : 100%;
     height              : 100%;
-    background-image    : url(../images/hero-bg-3000.jpg);
+    background-image    : url(../images/hero-bg-3001.jpg);
     background-repeat   : no-repeat;
     background-position : center;
     background-size     : cover;
