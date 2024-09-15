@@ -223,6 +223,20 @@
     }; // end ssSwiper
 
 
+    /* cloudflare turnstile
+    * ---------------------------------------------------- */ 
+    document.addEventListener("DOMContentLoaded", function() {
+        // Disable the subscribe button initially
+        document.querySelector("input[name='subscribe']").disabled = true;
+    
+        // Callback for the Cloudflare Turnstile challenge
+        window.turnstileCallback = function() {
+            // Enable the subscribe button once the challenge is passed
+            document.querySelector("input[name='subscribe']").disabled = false;
+        };
+    }); // cloudflare turnstile
+    
+
    /* mailchimp form
     * ---------------------------------------------------- */ 
     const ssMailChimpForm = function() {
