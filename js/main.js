@@ -10,7 +10,7 @@
     const cfg = {
         
         // MailChimp URL
-        mailChimpURL : 'https://facebook.us1.list-manage.com/subscribe/post?u=1abf75f6981256963a47d197a&amp;id=37c6d8f4d6' 
+        mailChimpURL : 'https://nexappcloud.us9.list-manage.com/subscribe/post?u=93d359692936ac1cdeb9025b3&amp;id=f0177a0d68&amp;f_id=00e558e1f0' 
 
     };
 
