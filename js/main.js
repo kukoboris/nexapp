@@ -225,6 +225,11 @@
 
     /* cloudflare turnstile
     * ---------------------------------------------------- */ 
+    /* The above JavaScript code is adding an event listener to the DOMContentLoaded event. When the
+    DOM content is loaded, it disables the subscribe button initially. It also defines a callback
+    function named `turnstileCallback` which will be called when the Cloudflare Turnstile challenge
+    is passed. Inside the `turnstileCallback` function, it enables the subscribe button by setting
+    its disabled attribute to false. */
     document.addEventListener("DOMContentLoaded", function() {
         // Disable the subscribe button initially
         document.querySelector("input[name='subscribe']").disabled = true;
